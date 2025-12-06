@@ -2,34 +2,37 @@ public class LibraryApp {
 
     public static void main(String[] args) {
 
-        // 1. Create Book Objects (Demonstrating Constructor Use)
+        // 1. Create Book and Member Objects
         Book book1 = new Book("The Java Programming Guide", "Josh Bloch", 97812345);
-        Book book2 = new Book("OOP Fundamentals", "Bjarne Stroustrup", 97867890);
+        Book book2 = new Book("OOP Fundamentals", "Bjarne Stroustrup", 97867890); // Used book2
 
-        // 2. Create Member Objects (Demonstrating Constructor Use)
         Member member1 = new Member("Alice Johnson", 101);
-        Member member2 = new Member("Bob Smith", 102);
+        Member member2 = new Member("Bob Smith", 102); // Used member2
 
-        System.out.println("--- Library System Initial State ---");
+        System.out.println("--- Library System State ---");
         member1.displayMemberInfo();
-        System.out.println("Book 1: '" + book1.getTitle() + "' is available? " + !book1.isBorrowed());
+        member2.displayMemberInfo(); // Used member2
 
-        System.out.println("\n--- Simulating Book Borrowing ---");
+        // Demonstrate previously unused getters for book1
+        System.out.println("Book 1 Details: '" + book1.getTitle() + "' by " + book1.getAuthor() + " (ISBN: " + book1.getISBN() + ")");
 
-        // 3. Demonstrate Encapsulation: Borrowing a Book (Using the Setter)
-        // Alice borrows the Java Guide. We use the public setter method to change the private state.
+        System.out.println("\n--- Simulating Book Transactions ---");
+
+        // Alice borrows Book 1
         book1.setBorrowed(true);
+        System.out.println(member1.getName() + " has borrowed '" + book1.getTitle() + "'. Status: " + book1.isBorrowed());
 
-        System.out.println(member1.getName() + " has borrowed '" + book1.getTitle() + "'.");
+        // Bob borrows Book 2 (Using book2 and member2)
+        book2.setBorrowed(true);
+        System.out.println(member2.getName() + " has borrowed '" + book2.getTitle() + "'. Status: " + book2.isBorrowed());
 
-        // 4. Demonstrate Encapsulation: Checking the new status (Using the Getter)
-        System.out.println("Book 1 Status  " + (book1.isBorrowed() ? "BORROWED" : "AVAILABLE"));
+        // Demonstrate previously unused getter for member ID
+        System.out.println("Confirming Member ID: " + member1.getName() + "'s ID is " + member1.getMemberId());
 
         System.out.println("\n--- Simulating Book Return ---");
 
-        // 5. Simulating a Return
+        // Alice returns Book 1
         book1.setBorrowed(false);
-        System.out.println(member1.getName() + " has returned '" + book1.getTitle() + "'.");
-        System.out.println("Book 1 Status: " + (book1.isBorrowed() ? "BORROWED" : "AVAILABLE"));
+        System.out.println(member1.getName() + " has returned '" + book1.getTitle() + "'. Status: " + book1.isBorrowed());
     }
 }

@@ -1,28 +1,20 @@
 public class Book {
 
-    // 1. Private Attributes (Data Hiding - Encapsulation)
-    private String title;
-    private String author;
-    private int ISBN; // International Standard Book Number
-    private boolean isBorrowed; // true if borrowed, false otherwise
+    // 'final' is not used here because 'isBorrowed' *must* change.
+    private final String title;
+    private final String author;
+    private final int ISBN;
+    private boolean isBorrowed;
 
-    // 2. Constructor Overloading: Parameterized Constructor
-    // Used to initialize the object with values when it is created.
+    // Only the parameterized constructor is kept
     public Book(String title, String author, int ISBN) {
-        // 'this' keyword refers to the current object's attributes
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
-        this.isBorrowed = false; // Books start as available
+        this.isBorrowed = false;
     }
 
-    // Optional: Default Constructor (Method Overloading)
-    public Book() {
-        // Allows creation of a Book object without initial parameters
-    }
-
-    // 3. Public Getters (Accessors)
-    // Used to safely read the private attributes.
+    // Getters (previously unused methods are now called in LibraryApp)
     public String getTitle() {
         return title;
     }
@@ -39,9 +31,7 @@ public class Book {
         return isBorrowed;
     }
 
-    // 4. Public Setter (Mutator)
-    // Used to safely change the private attribute. This is the "basic functionality"
-    // for borrowing/returning a book.
+    // Setter
     public void setBorrowed(boolean borrowed) {
         isBorrowed = borrowed;
     }
