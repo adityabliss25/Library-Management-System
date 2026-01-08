@@ -53,6 +53,7 @@ The project is divided into specific classes to demonstrate the core pillars of 
 
 ## 6. Screenshots & Diagrams
 UML Class Diagram
+
 This diagram shows the relationship between the Book, Member, and Library classes.
 
 
