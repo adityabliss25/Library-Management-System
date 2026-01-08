@@ -50,3 +50,10 @@ The project is divided into specific classes to demonstrate the core pillars of 
 2. Member Registration: New Member objects are created with unique IDs.
 
 3. Search & Update: The system iterates through the objects to find a specific title and updates its isAvailable boolean status.
+
+## 6. Screenshots & Diagrams
+UML Class Diagram
+This diagram shows the relationship between the Book, Member, and Library classes.
+
+
+Console Output
