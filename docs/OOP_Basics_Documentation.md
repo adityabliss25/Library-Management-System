@@ -31,7 +31,7 @@ The objective of this project was to apply Object-Oriented Programming (OOP) pri
 The project is divided into specific classes to demonstrate the core pillars of OOP:
 
 | Class | Role | OOP Principle Applied |
-| :--- | :--- |
-| **Scanner Input** | Captures user data (e.g., Student Names, Marks, or Numbers). |
-| **Logic Engine** | Processes the input (e.g., calculating averages or performing arithmetic). |
-| **Output Formatter** | Displays the final result to the user in a clean, readable format. |
+| :--- | :--- | :---
+| **Book** | Represents a library book with attributes like Title, Author, and ISBN. | Encapsulation (Private fields).
+| **Member** | Stores details of library patrons and their borrowed items. | Object Creation and state management.
+| **Library** | Acts as the controller, managing a collection of Book and Member objects. | Composition (A Library "has-a" list of Books).
