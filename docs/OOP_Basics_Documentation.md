@@ -1,4 +1,4 @@
-**Library Management System Documentation**
+# Library Management System Documentation**
 
 1. Project Overview and Objectives
 The objective of this project was to apply Object-Oriented Programming (OOP) principles to model a functional Library Management System. The system manages a collection of books and library members, ensuring data is organized through class structures rather than simple primitive variables.
