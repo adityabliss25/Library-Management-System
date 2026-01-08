@@ -22,5 +22,16 @@ The objective of this project was to apply Object-Oriented Programming (OOP) pri
 
 4. User Manual: * The system will initialize with a set of default books.
 
-    • Use the console menu to add new books, register members, or check the availability of titles.
-   • Enter book details (Title, Author, ISBN) as prompted.
+ • Use the console menu to add new books, register members, or check the availability of titles.
+ 
+ • Enter book details (Title, Author, ISBN) as prompted.
+
+## 3. Code Structure & OOP Explanation
+
+The project is divided into specific classes to demonstrate the core pillars of OOP:
+
+| Class | Role | OOP Principle Applied |
+| :--- | :--- |
+| **Scanner Input** | Captures user data (e.g., Student Names, Marks, or Numbers). |
+| **Logic Engine** | Processes the input (e.g., calculating averages or performing arithmetic). |
+| **Output Formatter** | Displays the final result to the user in a clean, readable format. |
