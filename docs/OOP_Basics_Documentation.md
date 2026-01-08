@@ -14,13 +14,13 @@ The objective of this project was to apply Object-Oriented Programming (OOP) pri
 
 ## 2. Setup and Installation Instructions**
 
-• JDK Requirement: Ensure JDK 11 or higher is installed.
+1. JDK Requirement: Ensure JDK 11 or higher is installed.
 
-• Environment: Open the project in your preferred IDE (IntelliJ IDEA recommended).
+2. Environment: Open the project in your preferred IDE (IntelliJ IDEA recommended).
 
-• Execution: Run the Main.java file.
+3. Execution: Run the Main.java file.
 
-• User Manual: * The system will initialize with a set of default books.
+4. User Manual: * The system will initialize with a set of default books.
 
-    Use the console menu to add new books, register members, or check the availability of titles.
-    Enter book details (Title, Author, ISBN) as prompted.
+    • Use the console menu to add new books, register members, or check the availability of titles.
+   • Enter book details (Title, Author, ISBN) as prompted.
