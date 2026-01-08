@@ -18,7 +18,7 @@ The objective of this project was to apply Object-Oriented Programming (OOP) pri
 
 2. Environment: Open the project in your preferred IDE (IntelliJ IDEA recommended).
 
-3. Execution: Run the Main.java file.
+3. Execution: Run the LibraryApp.java file.
 
 4. User Manual: * The system will initialize with a set of default books.
 
