@@ -57,4 +57,8 @@ UML Class Diagram
 This diagram shows the relationship between the Book, Member, and Library classes.
 
 
+https://github.com/adityabliss25/Library-Management-System/blob/master/docs/Images/Use%20Case%20Diagram.png
+
+
 Console Output
+https://github.com/adityabliss25/Library-Management-System/blob/master/docs/Images/Console%20Output.png
